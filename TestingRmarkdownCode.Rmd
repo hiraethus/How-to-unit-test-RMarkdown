@@ -1,0 +1,20 @@
+---
+title: "Testing RMarkdown Code"
+author: "Michael J Jones"
+date: "1 July 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::read_chunk('R/is_prime.R')
+```
+
+## Demonstrating is.prime
+
+```{r  external-code}
+```
+
+```{r test-is-prime}
+is.prime(1000)
+```
